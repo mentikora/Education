@@ -3,18 +3,20 @@
 }
 
 html {
-  font-family: sans-serif; 
   -ms-text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%;
 }
 
 body{
   margin: 0;
+}
 
+html, body{
   font: {
-    size: 15px;
+    size: $default-fontSize;
     family: $primary-font;
   }
+  color: $color-black;
 }
 
 .logo{
