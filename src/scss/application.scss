@@ -1,9 +1,12 @@
 @import 'base/variables.scss';
 @import 'base/typography.scss';
 
-@import 'extends/bootstrap.min.css';
-@import 'extends/normalize.css';
+@import 'extends/bootstrap.min.scss';
+@import 'extends/normalize.scss';
 
 @import 'layout/layout.scss';
 @import 'layout/header.scss';
 @import 'layout/footer.scss';
+
+@import 'components/button.scss';
+@import 'components/information-block.scss';

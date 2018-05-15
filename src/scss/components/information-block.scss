@@ -1,0 +1,81 @@
+.information-block{
+
+  // mod
+  &--blue{
+    .information-block__body{
+      border-left-color: $color-blue;
+    }
+    .information-block__price,
+    .information-block__bonus span{
+      color: $color-blue;
+    }
+  }
+
+  //mod
+  &--green{
+    .information-block__body{
+      border-left-color: $color-green;
+    }
+    .information-block__price,
+    .information-block__bonus span{
+      color: $color-green;
+    }
+  }
+  
+  //mod
+  &--orange{
+    .information-block__body{
+      border-left-color: $color-orange;
+    }
+    .information-block__price,
+    .information-block__bonus span{
+      color: $color-orange;
+    }
+  }
+
+  // caption
+  &__caption{
+
+  }
+
+  // body
+  &__body{
+    border-left: {
+      width: 3px;
+      style: solid;
+    }
+  }
+
+  //title
+  &__title{
+
+  }
+
+  //list wrapper
+  &__list-wrapper{
+    ul{
+
+    }
+    li{
+
+    }
+  }
+
+  // price && button wrapper
+  &__action{
+
+  }
+  &__price{
+
+  }
+  &__button{
+
+  }
+
+  // bonus
+  &__bonus{
+    span{
+
+    }
+  }
+}
