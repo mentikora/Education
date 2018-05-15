@@ -1,3 +1,25 @@
 .header{
+  height: 60px;
   border-bottom: 1px solid rgba(0,0,0, .1);
+
+  // header logo
+  &__logo{
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  // header menu
+  &__menu-list{
+    margin-top: 19px;
+
+    li{
+      display: inline-block;
+
+      margin-right: 50px;
+    }
+
+    a{
+      color: $color-black;
+    }
+  }
 }
