@@ -1,54 +1,88 @@
 .information-block{
 
+  margin-top: 60px;
+
+  $body-gutter: 25px;
+
   // mod
   &--blue{
-    .information-block__body{
+    .information-block__body,
+    .information-block__bonus{
       border-left-color: $color-blue;
     }
     .information-block__price,
     .information-block__bonus span{
       color: $color-blue;
     }
+    .information-block__list-wrapper li::before{
+      background-color: $color-blue;
+    }
   }
 
   //mod
   &--green{
-    .information-block__body{
+    .information-block__body,
+    .information-block__bonus{
       border-left-color: $color-green;
     }
     .information-block__price,
     .information-block__bonus span{
       color: $color-green;
     }
+    .information-block__list-wrapper li::before{
+      background-color: $color-green;
+    }
   }
   
   //mod
   &--orange{
-    .information-block__body{
+    .information-block__body,
+    .information-block__bonus{
       border-left-color: $color-orange;
     }
     .information-block__price,
     .information-block__bonus span{
       color: $color-orange;
     }
+    .information-block__list-wrapper li::before{
+      background-color: $color-orange;
+    }
   }
 
   // caption
   &__caption{
+    margin: {
+      top: 0;
+      bottom: 30px;
+    }
 
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+    line-height: 19px;
   }
 
-  // body
-  &__body{
+  &__body,
+  &__bonus{
     border-left: {
       width: 3px;
       style: solid;
     }
   }
 
+  // body
+  &__body{
+    padding: {
+      top: 10px;
+      right: $body-gutter;
+      left: $body-gutter;
+    }
+  }
+
   //title
   &__title{
-
+    margin-top: 0;
   }
 
   //list wrapper
@@ -57,25 +91,72 @@
 
     }
     li{
+      position: relative;
+      margin-bottom: 17px;
+      padding-left: 10px;
 
+      font-size: 16px;
+
+      &::before{
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        margin-top: -2px;
+        
+        position: absolute;
+        top: 50%; left: 0;
+        z-index: 2;
+
+        border-radius: 50%;
+      }
     }
   }
 
   // price && button wrapper
   &__action{
+    display: flex;
+    align-items: center;
 
+    margin: {
+      top: 25px;
+      bottom: 30px;
+    }
   }
   &__price{
+    margin-right: 22px;
 
-  }
-  &__button{
+    font:{
+      size: 18px;
+      weight: 600;
+    }
 
+    span{
+      font-size: 30px;
+    }
   }
 
   // bonus
   &__bonus{
-    span{
+    margin-left: -$body-gutter;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+      left: 18px;
+    }
 
+    display: flex;
+
+    font-size: 14px;
+
+    span{
+      display: inline-block;
+      margin: {
+        left: 15px;
+        right: 8px;
+      }
+
+      font-weight: 600;
     }
   }
 }
