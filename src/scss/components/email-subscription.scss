@@ -1,0 +1,33 @@
+.email-subscription-bg{
+  padding: 5px;
+  
+  background: {
+    image: url('./images/email-subscription.png');
+    size: cover;
+    repeat: no-repeat;
+    position: 50%;
+  }
+}
+.email-subscription-content{
+  text-align: center;
+
+  padding: {
+    top: 35px;
+    bottom: 60px;
+  }
+
+  background-color: $color-white;
+
+  h2{
+    margin-top: 0;
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+  }
+  .form-control{
+    width: 370px;
+    margin-right: 5px;
+  }
+}
