@@ -14,11 +14,12 @@
 
     li{
       display: inline-block;
-
       margin-right: 50px;
     }
 
     a{
+      font-size: 14px;
+      text-decoration: none;
       color: $color-black;
     }
   }

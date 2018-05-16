@@ -1,0 +1,25 @@
+.faq-wrapper{
+  margin-bottom: 60px;
+  
+  // title
+  &__title{
+    display: block;
+
+    text-align: center;
+  }
+}
+
+// item
+.faq-item{
+  color: $color-black-secondary;
+
+  // title
+  &__title{
+    margin-bottom: 0;
+  }
+
+  // text
+  &__text{
+    font-size: 14px;
+  }
+}

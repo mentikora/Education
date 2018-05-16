@@ -20,6 +20,7 @@ h3{
   line-height: 2.25rem;
 }
 
+// text colors
 .c-blue{
   color: $color-blue;
 }
@@ -28,4 +29,9 @@ h3{
 }
 .c-orange{
   color: $color-orange;
+}
+
+// etc
+.text-center{
+  text-align: center;
 }
