@@ -59,16 +59,37 @@
     <main class="main-content">
       
       <!-- section welcome -->
-      <section class="welcome">
+      <section class="welcome-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-3 col-md-offset-1">
+              <img 
+                src="./images/test-image.png" 
+                class="img-responsive" 
+                alt="Бесплатное обучение в Европе"
+              />
+            </div>
+            <div class="col-md-4">
               <h1>
                 Бесплатное обучение в Европе
               </h1>        
               <p>
                 Среднее и высшее образование в Польше, Чехии и Словакии
               </p>
+            </div>
+            <div class="col-md-4">
+              <div class="consultation-form-wrapper">
+                <form class="consultation-form">
+                  <h3 class="consultation-form__title">
+                    Бесплатная консультация
+                  </h3>
+                  <input class="form-control" type="text" placeholder="Имя">
+                  <input class="form-control" type="text" placeholder="Email">
+                  <input class="form-control" type="text" placeholder="Телефон">
+                  <input class="form-control" type="text" placeholder="Когда перезвонить?">
+                  <input type="submit" value="Заказать звонок" class="button button--red">
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -116,6 +137,7 @@
                   </div>
                 </div>
                 <div class="information-block__bonus">
+                  <i class="icon-ball"></i>
                   <span>
                     Новинка:  
                   </span>   
@@ -277,6 +299,7 @@
                   </div>
                 </div>
                 <div class="information-block__bonus">
+                  <i class="icon-ticket"></i>
                   <span>
                     Добавлены:  
                   </span>
@@ -293,11 +316,37 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h2>
-                Топ 10 ВУЗов Польши за 399 €
+              <h2 class="top-educational-institutions__title">
+                Топ 10 ВУЗов Польши 
+                <span>
+                  за 399 €
+                </span>   
               </h2>
-              <div class="slider">
-                slider
+              <div class="top-educational-institutions-slider">
+                <div class="top-educational-item">
+                  <div class="top-educational-item__image-wrapper">
+                    <img src="./images/test-image.png" alt="">
+                  </div>
+                  <h4 class="top-educational-item__title">Академия им. Ф. Моджевского</h4>
+                </div>
+                <div class="top-educational-item">
+                  <div class="top-educational-item__image-wrapper">
+                    <img src="./images/test-image.png" alt="">
+                  </div>
+                  <h4 class="top-educational-item__title">Академия Леона Козьминского</h4>
+                </div>
+                <div class="top-educational-item">
+                  <div class="top-educational-item__image-wrapper">
+                    <img src="./images/test-image.png" alt="">
+                  </div>
+                  <h4 class="top-educational-item__title">Польско-японская Академия информационных технологий</h4>
+                </div>
+                <div class="top-educational-item">
+                  <div class="top-educational-item__image-wrapper">
+                    <img src="./images/test-image.png" alt="">
+                  </div>
+                  <h4 class="top-educational-item__title">Ягеллонский Университет в Кракове</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -355,8 +404,9 @@
                   </div>
                 </div>
                 <div class="information-block__bonus">
+                  <i class="icon-fire"></i>
                   <span>
-                      Новинка:
+                    Новинка:
                   </span>
                   Специальность футбол
                 </div>
@@ -522,6 +572,8 @@
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/slick.js"></script>
   <script src="./js/main.js"></script>
 
 </body>

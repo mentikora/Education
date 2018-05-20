@@ -1,5 +1,4 @@
 .information-block{
-
   margin-top: 60px;
 
   $body-gutter: 25px;
@@ -148,6 +147,11 @@
     display: flex;
 
     font-size: 14px;
+
+    i{
+      font-size: 30px;
+      color: $color-black;
+    }
 
     span{
       display: inline-block;
