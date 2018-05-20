@@ -17,3 +17,11 @@ $button-transition: background-color .25s ease-in-out;
 
 // BorderRadius
 $default-border-radius: 3px;
+
+// zIndex
+$zIndex-default: 100;
+$zIndex-consultation-form: $zIndex-default - 50;
+
+// Slider
+$slider-dot-active: #4F4F4F;
+$slider-dot-unactive: #C4C4C4;

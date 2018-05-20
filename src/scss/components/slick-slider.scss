@@ -1,0 +1,72 @@
+.slider-arrow{
+  position: absolute;
+  top: 60px; 
+  z-index: 2;
+
+  display: block;
+  margin-top: -20px;
+
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: inherit;
+
+  color: rgba($color-black, .5);
+  font-size: 40px;
+
+  transition: .15s ease-in-out;
+
+  &:hover{
+    color: $color-black;
+  }
+
+  // prev
+  &--prev{
+    left: 0;
+  }
+
+  // next
+  &--next{
+    right: 0;
+  }
+}
+
+// slider dots
+.slider-dots{
+  display: flex;
+  justify-content: center;
+
+  margin: {
+    top: 25px;
+    bottom: 35px;
+  }
+
+  li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: {
+      left: 5px;
+      right: 5px;
+    }
+    &.slick-active button{
+      background-color: $color-black;
+    }
+  }
+  
+  button{
+    display: block;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-indent: -9999px;
+    border-radius: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: $slider-dot-unactive;
+
+    transition: .15s ease-in-out;
+  }
+}

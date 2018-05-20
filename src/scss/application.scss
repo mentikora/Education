@@ -1,16 +1,23 @@
 @import 'base/variables.scss';
+@import 'base/icomoon.scss';
 @import 'base/typography.scss';
 
 @import 'extends/bootstrap.min.scss';
 @import 'extends/normalize.scss';
+@import 'extends/slick.scss';
 
 @import 'layout/layout.scss';
 @import 'layout/header.scss';
 @import 'layout/footer.scss';
 
+@import 'components/slick-slider.scss';
 @import 'components/button.scss';
 @import 'components/form-control.scss';
 @import 'components/information-block.scss';
 @import 'components/register-counter.scss';
 @import 'components/faq-item.scss';
 @import 'components/email-subscription.scss';
+@import 'components/directions-list.scss';
+@import 'components/welcome-section.scss';
+@import 'components/consultation-form.scss';
+@import 'components/educational-inst.scss';
