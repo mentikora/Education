@@ -1,0 +1,97 @@
+.camps-wrapper{
+  margin: {
+    top: 60px;
+    bottom: 30px;
+  }
+}
+
+// fake slider for desktop
+.camps-row {
+
+  @media(min-width: $screen-sm){
+    margin: {
+      left: -25px;
+      right: -25px;
+    }
+  }
+  
+  .slick-slide{
+    @media(max-width: $screen-sm-max){
+      width: 270px;
+      opacity: 0.2;
+
+      transition: opacity .15s ease-in-out;
+
+      &.slick-current{
+        opacity: 1;
+      }
+    }
+    @media(min-width: $screen-sm){
+      padding: {
+        left: 25px;
+        right: 25px;
+      }
+    }
+  }
+  
+  .slider-arrow{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// item
+.camp{
+  padding: {
+    top: 30px;
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+  }
+  border: 3px solid rgba(79, 79, 79, 0.1);
+
+  // image
+  &__image-wrapper{
+    text-align: center;
+
+    img{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+
+      border-radius: 50%;
+    }
+  }
+
+  // title
+  &__title{
+    margin: {
+      top: 15px;
+      bottom: 10px;
+    }
+    text-align: center;
+    line-height: 22px;
+  }
+
+  // location
+  &__location{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  // text
+  &__text{
+    margin-top: 20px;
+
+    font-size: 0.875rem;
+    line-height: 17px;
+
+    li {
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

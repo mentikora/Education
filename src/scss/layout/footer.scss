@@ -11,6 +11,10 @@
       left: 10px;
       right: 10px;
     }
+
+    @media(max-width: $screen-sm-max){
+      flex-direction: column;
+    }
   }
 
   &__left-side,
@@ -18,31 +22,42 @@
     display: flex;
     align-items: center;
 
-    height: 40px;
+    @media(min-width: $screen-sm){
+      height: 40px;
+    }
   }
   &__left-side{
 
   }
 
   &__right-side{
-
+    @media(max-width: $screen-sm-max){
+      flex-direction: column;
+    }
   }
 
   // phones
   .phones{
-
+    @media(max-width: $screen-sm-max){
+      margin-bottom: 20px;
+    }
   }
   .phone{
-    display: inline-block;
+    @media(max-width: $screen-sm-max){
+      display: block;
+      margin-bottom: 20px;
+    }
+    @media(min-width: $screen-sm){
+      & + .phone {
+        margin-left: 10px;
+      }
+    }
     
     font:{
       size: 14px;
       weight: 600;
     }
 
-    & + .phone {
-      margin-left: 10px;
-    }
   }
 
   // lang 
@@ -68,6 +83,11 @@
 
   // logo
   &__logo{
-    margin-left: 80px;
+    @media(max-width: $screen-sm-max){
+      margin-top: 20px;
+    }
+    @media(min-width: $screen-sm){
+      margin-left: 80px;
+    }
   }
 }

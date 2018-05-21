@@ -7,16 +7,34 @@
     repeat: no-repeat;
     position: 50%;
   }
+
+  @media(max-width: $screen-md-max){
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
 }
 .email-subscription-content{
   text-align: center;
 
   padding: {
-    top: 35px;
-    bottom: 60px;
+    left: 50px;
+    right: 50px;
   }
 
   background-color: $color-white;
+
+  @media(min-width: $screen-sm){
+    padding: {
+      top: 35px;
+      bottom: 60px;
+    }
+  }
+  @media(max-width: $screen-sm-max){
+    padding: {
+      top: 30px;
+      bottom: 30px;
+    }
+  }
 
   h2{
     margin-top: 0;
@@ -25,9 +43,21 @@
   form{
     display: flex;
     justify-content: center;
+
+    @media(max-width: $screen-sm-max){
+      flex-direction: column;
+    }
   }
   .form-control{
-    width: 370px;
-    margin-right: 5px;
+    @media(min-width: $screen-sm){
+      width: 370px;
+      margin-right: 5px;
+    }
+  }
+  .button{
+    @media(max-width: $screen-sm){
+      width: 100%;
+      margin-top: 15px;
+    }
   }
 }

@@ -1,5 +1,12 @@
 .faq-wrapper{
   margin-bottom: 70px;
+
+  @media(max-width: $screen-md-max){
+    padding: {
+      left: 22px;
+      right: 22px;
+    }
+  }
   
   // title
   &__title{
