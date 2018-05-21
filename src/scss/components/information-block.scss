@@ -73,9 +73,13 @@
   // body
   &__body{
     padding: {
-      top: 10px;
+      top: 3px;
       right: $body-gutter;
       left: $body-gutter;
+    }
+
+    @media(min-width: $screen-xs){
+      margin-left: 10px;
     }
   }
 
@@ -118,8 +122,8 @@
     align-items: center;
 
     margin: {
-      top: 25px;
-      bottom: 30px;
+      top: 35px;
+      bottom: 20px;
     }
   }
   &__price{
