@@ -20,6 +20,8 @@
 // item
 .faq-item{
   color: $color-black-secondary;
+  word-break: break-word;
+  hyphens: auto;
 
   // title
   &__title{
