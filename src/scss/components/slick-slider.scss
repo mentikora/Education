@@ -29,6 +29,11 @@
   &--next{
     right: 0;
   }
+
+  &.slick-disabled{
+    opacity: 0;
+    cursor: default;
+  }
 }
 
 // slider dots

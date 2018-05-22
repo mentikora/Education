@@ -25,3 +25,13 @@ $zIndex-consultation-form: $zIndex-default - 50;
 // Slider
 $slider-dot-active: #4F4F4F;
 $slider-dot-unactive: #C4C4C4;
+
+// Grid
+$screen-xs: 568px;
+$screen-xs-max: $screen-xs - 1;
+$screen-sm: 768px;
+$screen-sm-max: $screen-sm - 1;
+$screen-md: 992px;
+$screen-md-max: $screen-md - 1;
+$screen-lg: 1200px;
+$screen-lg-max: $screen-lg - 1; 

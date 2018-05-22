@@ -24,8 +24,7 @@
   &__image-wrapper{
     img{
       display: inline-block;
-      width: 140px;
-      height: 140px;
+      
       margin: {
         left: auto;
         right: auto;
@@ -33,6 +32,15 @@
       }
 
       border-radius: 50%;
+
+      @media(max-width: $screen-sm-max){
+        width: 100px;
+        height: 100px;
+      }
+      @media(min-width: $screen-sm){
+        width: 140px;
+        height: 140px;
+      }
     }
   }
 

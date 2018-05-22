@@ -9,6 +9,7 @@ html {
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 html, body{
@@ -24,5 +25,12 @@ html, body{
   img{
     display: inline-block;
     height: 40px;
+  }
+}
+
+// bootstrap custom's
+.hidden-md-down{
+  @media(max-width: $screen-md-max){
+    display: none;
   }
 }

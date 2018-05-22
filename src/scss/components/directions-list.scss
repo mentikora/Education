@@ -1,5 +1,11 @@
 .directions-list-wrapper{
   margin-top: 40px;
+
+  .slick-slide{
+    @media(max-width: $screen-sm-max){
+      width: 270px;
+    }
+  }
 }
 
 .directions-list-wrapper-inner{
@@ -15,20 +21,24 @@
 .direction-list{
   li{
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     padding-left: 10px;
 
     font-size: 14px;
+
+    p{
+      margin: 0;
+    }
 
     &::before{
       content: '';
       display: block;
       width: 4px;
       height: 4px;
-      margin-top: -2px;
+      margin-top: 8px;
       
       position: absolute;
-      top: 50%; left: 0;
+      top: 0; left: 0;
       z-index: 2;
 
       border-radius: 50%;
