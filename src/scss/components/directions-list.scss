@@ -1,5 +1,11 @@
 .directions-list-wrapper{
   margin-top: 40px;
+
+  .slick-slide{
+    @media(max-width: $screen-sm-max){
+      width: 270px;
+    }
+  }
 }
 
 .directions-list-wrapper-inner{
