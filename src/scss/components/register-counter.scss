@@ -7,12 +7,31 @@
   text-align: center;
   color: $color-white;
 
-  background-color: $color-green;
+  @media(max-width: $screen-sm-max){
+    background: {
+      color: $color-green;
+      image: url('./images/counter-bg-left.png');
+      repeat: no-repeat;
+      position: left bottom;
+      size: cover;
+    }
+  }
+
+  @media(min-width: $screen-sm){
+    background: {
+      color: $color-green;
+      image: url('./images/counter-bg-left.png'), url('./images/counter-bg-right.png');
+      repeat: no-repeat, no-repeat;
+      position: left bottom, right top;
+    }
+  }
 
   h2{
     margin: {
       top: 0;
       bottom: 20px;
+      left: 10px;
+      right: 10px;
     }
   }
 

@@ -20,7 +20,8 @@ $default-border-radius: 3px;
 
 // zIndex
 $zIndex-default: 100;
-$zIndex-consultation-form: $zIndex-default - 50;
+$zIndex-consultation-form-desktop: $zIndex-default - 50;
+$zIndex-consultation-form-mobile: $zIndex-default + 50;
 
 // Slider
 $slider-dot-active: #4F4F4F;

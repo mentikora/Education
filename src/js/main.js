@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function(){
     $('.header').toggleClass('is-shadow');
   });
 
+  // show form button, mobile
+  var consultationForm = $('.consultation-form-wrapper');
+
+  $('.button-show-form').on('click', function(){
+    consultationForm.addClass('is-active');
+
+    // hide popup on white bg click/touch
+    document.addEventListener('click', function(event){
+      if ( $(event.target).closest('.consultation-form').length != 0 || $(event.target).closest('.button-show-form').length != 0) return false;
+      consultationForm.removeClass('is-active');
+    }, false);
+  });
+
   // directions list
   $('.directions-list-wrapper-inner').slick({
     infinite: false,
@@ -22,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(){
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
           dotsClass: 'slider-dots',
