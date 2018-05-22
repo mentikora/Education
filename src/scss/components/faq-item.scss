@@ -25,7 +25,12 @@
 
   // title
   &__title{
-    margin-bottom: 0;
+    @media(max-width: $screen-sm-max){
+      margin-bottom: 5px;
+    }
+    @media(min-width: $screen-sm){
+      margin-bottom: 0;
+    }
   }
 
   // text
