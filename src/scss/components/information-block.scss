@@ -193,3 +193,14 @@
     }
   }
 }
+
+// images inside information block
+.kids-image-wrapper{
+  height: 360px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

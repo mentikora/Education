@@ -9,11 +9,15 @@
   }
 
   .col-xs-6{
-    height: 240px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .kids-image-wrapper{
+    @media(max-width: $screen-md-max){
+      height: 240px;
+    }
+    @media(min-width: $screen-md){}
   }
 
   h1{

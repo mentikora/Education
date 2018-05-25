@@ -26,22 +26,29 @@
 
 .icon-ball:before {
   content: "\e900";
-}
-.icon-burger:before {
-  content: "\e901";
-}
-.icon-ar-right:before {
-  content: "\e902";
-}
-.icon-ar-left:before {
-  content: "\e903";
+  color: #4f4f4f;
 }
 .icon-close:before {
-  content: "\e904";
+  content: "\e901";
+  color: #4f4f4f;
 }
 .icon-fire:before {
-  content: "\e905";
+  content: "\e902";
+  color: #4f4f4f;
 }
 .icon-ticket:before {
+  content: "\e903";
+  color: #4f4f4f;
+}
+.icon-burger:before {
+  content: "\e904";
+}
+.icon-ar-right:before {
+  content: "\e905";
+}
+.icon-ar-left:before {
   content: "\e906";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }
